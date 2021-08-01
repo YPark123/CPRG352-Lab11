@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS `notesdb`.`user` (
   `last_name` VARCHAR(20) NOT NULL,
   `password` VARCHAR(20) NOT NULL,
   `role` INT(11) NOT NULL,
+  `ResetPasswordUUID` VARCHAR(50) NULL,
   PRIMARY KEY (`email`),
   CONSTRAINT `fk_user_role`
     FOREIGN KEY (`role`)
